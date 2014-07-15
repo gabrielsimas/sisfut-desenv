@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9E25A0A7-5809-433B-AB69-CE8FA7B6A180}</ProjectGuid>
+    <ProjectGuid>{065A925F-F83A-438B-ACA1-138694C03AD8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sisfut.Arquitetura.Fachada</RootNamespace>
-    <AssemblyName>Sisfut.Arquitetura.Fachada</AssemblyName>
+    <RootNamespace>Sisfut.Sistema.Entidade</RootNamespace>
+    <AssemblyName>Sisfut.Sistema.Entidade</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Campeonato.cs" />
+    <Compile Include="Clube.cs" />
+    <Compile Include="ClubeTitulo.cs" />
+    <Compile Include="Confederacao.cs" />
+    <Compile Include="Confonto.cs" />
+    <Compile Include="Estadio.cs" />
+    <Compile Include="FaseCampeonato.cs" />
+    <Compile Include="InscritoCampeonato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

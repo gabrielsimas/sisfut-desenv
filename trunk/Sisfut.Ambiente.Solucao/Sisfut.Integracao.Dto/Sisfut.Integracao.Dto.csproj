@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9E25A0A7-5809-433B-AB69-CE8FA7B6A180}</ProjectGuid>
+    <ProjectGuid>{8FAA13A6-1BBB-4EDC-8FBC-A085A157FB8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sisfut.Arquitetura.Fachada</RootNamespace>
-    <AssemblyName>Sisfut.Arquitetura.Fachada</AssemblyName>
+    <RootNamespace>Sisfut.Integracao.Dto</RootNamespace>
+    <AssemblyName>Sisfut.Integracao.Dto</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
