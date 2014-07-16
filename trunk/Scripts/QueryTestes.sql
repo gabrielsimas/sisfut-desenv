@@ -48,3 +48,12 @@ GROUP BY A.idClubeMandante
 SELECT COUNT(idClubeMandante), COUNT(idClubeVisitante)
 FROM CampeonatoConfronto 
 group by idClubeMandante,idClubeVisitante
+
+--Calculo do numero de jogos
+SELECT COUNT(idClubeMandante)
+FROM CampeonatoConfronto cc
+
+
+SELECT * FROM CampeonatoInscrito
+
+SELECT * FROM Clube 
