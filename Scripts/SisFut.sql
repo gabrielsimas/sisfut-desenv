@@ -157,7 +157,9 @@ CREATE TABLE CampeonatoConfronto(
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT PK_CampeonatoConfronto PRIMARY KEY(id)
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT FK_CampeonatoConfronto_CampeonatoRodada_id FOREIGN KEY(idRodada) REFERENCES CampeonatoRodada(id)
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT FK_CampeonatoConfronto_Estadio_id FOREIGN KEY(idEstadio) REFERENCES Estadio(id)
+
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT FK_CampeonatoConfronto_CampeonatoInscritoMandante_id FOREIGN KEY(idClubeMandante) REFERENCES CampeonatoInscrito(id)
+
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT FK_CampeonatoConfronto_CampeonatoInscritoVisitante_id FOREIGN KEY(idClubeVisitante) REFERENCES CampeonatoInscrito(id)
 
 ALTER TABLE CampeonatoConfronto ADD CONSTRAINT CK_Estado
