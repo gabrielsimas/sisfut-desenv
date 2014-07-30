@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sisfut.Sistema.Entidade
+namespace Camada.Entidade
 {
 	using System;
 	using System.Collections.Generic;
@@ -20,7 +20,7 @@ namespace Sisfut.Sistema.Entidade
 		
 		#region Enum
 
-		enum TipoConfederacao: int
+		public enum TipoConfederacao: int
 		{
 		   Continental = 1,
 		   Nacional = 2,
@@ -36,7 +36,7 @@ namespace Sisfut.Sistema.Entidade
 		private String apelido;
 		private DateTime dataFundacao;
 		private String distintivo;
-		private TipoConfederacao tipoConfederacao;
+		private TipoConfederacao tpConfederacao;
 		private String pais;
 		private IList<Confederacao> membros;
 		private IList<Clube> clubes;
@@ -56,7 +56,7 @@ namespace Sisfut.Sistema.Entidade
 			this.nomeCompleto = nomeCompleto;
 			this.apelido = apelido;
 			this.dataFundacao = dataFundacao;
-			this.tipoConfederacao = tipoConfederacao;
+			this.tpConfederacao = tipoConfederacao;
 			this.membros = membros;
 			this.clubes = clubes;
 			this.campeonatos = campeonatos;
@@ -107,18 +107,28 @@ namespace Sisfut.Sistema.Entidade
 			}
 		}
 
-		public virtual String Distintivo { get; set; }
-
-		public virtual TipoConfederacao TipoConfederacao
-		{
+		public virtual String Distintivo {
 			get
 			{
-				return this.tipoConfederacao;
+				return this.distintivo;
 			}
 
 			set
 			{
-				this.tipoConfederacao = value;
+				this.distintivo = value;
+			}
+		}
+
+		public virtual TipoConfederacao TpConfederacao
+		{
+			get
+			{
+				return this.tpConfederacao;
+			}
+
+			set
+			{
+				this.tpConfederacao = value;
 			}
 		}
 
@@ -161,7 +171,7 @@ namespace Sisfut.Sistema.Entidade
 			}
 		}
 
-		public String Pais
+		public virtual String Pais
 		{
 			get
 			{
