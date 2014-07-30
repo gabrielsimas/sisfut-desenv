@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace Sisfut.Camada.Apresentacao
+namespace Apresentacao.Web
 {
     public static class WebApiConfig
     {

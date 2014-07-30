@@ -168,11 +168,7 @@ ALTER TABLE CampeonatoConfronto ADD CONSTRAINT CK_Estado
 	--1 = Em Andamento
 	--2 = Encerrado
 GO
-
-
-
-
-
+/**
 --Confronto:
 --Bahia - C - 0
 --Santos - F - 0
@@ -300,10 +296,5 @@ FROM Resultado
 WHERE idClube = 15
 
 SELECT * FROM JOGO
-	
+**/
 --Fim Tabela Resultado
-
-
-
-
-

@@ -8,7 +8,7 @@
     <ProjectGuid>{9968C904-1684-47A2-BAAC-E9B7957CD987}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sisfut.Arquitetura.Dto</RootNamespace>
+    <RootNamespace>Arquitetura.Dto</RootNamespace>
     <AssemblyName>Sisfut.Arquitetura.Dto</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
