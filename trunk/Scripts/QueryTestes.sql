@@ -1,5 +1,5 @@
 USE sisFut
-GO
+dGO
 
 SELECT c.id idCampeonato,c.apelido Campeonato,fc.id idFase,fc.nrofASE Fase,fc.nome NomeFase
 FROM Campeonato c 
@@ -8,12 +8,24 @@ FROM Campeonato c
 ORDER BY fc.nroFase
 GO
 
-SELECT cr.nroRodada,cr.dataRodada,clb1.id,clb1.apelido,cc.GolMandante Gol,'x'x,cc.GolVsitante Gol,clb2.apelido FROM CampeonatoConfronto cc
+SELECT * FROM CampeonatoRodada
+GO
+
+SELECT * FROM CampeonatoConfronto
+
+SELECT * FROM FaseCampeonato
+GO
+
+SELECT fc.Nome,cr.nroRodada,cr.nomeRodada,cr.dataRodada,clb1.id,clb1.apelido,cc.GolMandante Gol,'x'x,cc.GolVsitante Gol,clb2.apelido FROM CampeonatoConfronto cc
 	INNER JOIN CampeonatoInscrito cm ON cc.idClubeMandante = cm.id
 	INNER JOIN CampeonatoInscrito cv ON cc.idClubeVisitante = cv.id
 	INNER JOIN Clube clb1 ON clb1.id = cm.idClube
 	INNER JOIN Clube clb2 ON clb2.id = cv.idClube
 	INNER JOIN CampeonatoRodada cr ON cc.idRodada = cr.id
+	INNER JOIN FaseCampeonato fc ON fc.id = cr.idFase
+	LEFT JOIN Estadio est ON cc.idEstadio = est.id
+ORDER BY cr.nroRodada
+GO
 
 SELECT idClubeMandante,COUNT(id) FROM CampeonatoConfronto
 Group by idClubeMandante
